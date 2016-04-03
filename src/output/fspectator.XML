@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>fspectator</name></assembly>
+<members>
+<member name="T:FSpectator.AssertionErrorInfo">
+<summary>
+ Contains error information when an assertion failed
+</summary>
+</member>
+<member name="T:FSpectator.Color">
+<summary>
+ Represenations of the colors used to print to the console
+</summary>
+</member>
+<member name="T:FSpectator.TestResultType">
+<summary>
+ The different outcomes for an example
+</summary>
+</member>
+<member name="T:FSpectator.AssertionError">
+<summary>
+ Thrown when an assertion failed
+</summary>
+</member>
+<member name="T:FSpectator.PendingError">
+<summary>
+ Thrown when an example has yet to be implemented
+</summary>
+</member>
+<member name="M:FSpectator.Matchers.Object.ShouldNot``1(System.Object,FSpectator.Matchers.Matcher{``0})">
+<summary>
+ Allows the use of testContext.Subject.ShouldNot (matcher)
+</summary>
+</member>
+<member name="M:FSpectator.Matchers.Object.Should``1(System.Object,FSpectator.Matchers.Matcher{``0})">
+<summary>
+ Allows the use of testContext.Subject.Should (matcher)
+</summary>
+</member>
+<member name="M:FSpectator.Matchers.createCompoundMatcher``2(FSpectator.Matchers.Matcher{``0},Microsoft.FSharp.Core.FSharpFunc{``1,``0})">
+<summary>
+ Helps create a matcher, that uses a child matcher for some verification.
+ The passed function should extract the value from the actual value, that
+ the child matcher should match. E.g. for a sequence length matcher, the
+ f extracts the length of the sequence, and the matcher matches the length.
+</summary>
+</member>
+<member name="M:FSpectator.Runner.runWithWrapper(FSpectator.IReporter,System.Collections.Generic.IEnumerable{FSpectator.ExampleGroup.T})">
+<summary>
+ Runs a collection of top level group specs, using a specific
+ reporter to report progress. The generated report is returned
+ to the caller.
+</summary>
+</member>
+<member name="M:FSpectator.TestDataMap.T.op_BitwiseOr(FSpectator.TestDataMap.T,FSpectator.TestDataMap.T)">
+<summary>
+ Synonym for merge
+</summary>
+</member>
+<member name="M:FSpectator.TestDataMap.op_PlusPlus``1(System.String,``0)">
+<summary>
+ Creates a TestDataMap with a single element
+</summary>
+</member>
+<member name="M:FSpectator.TestDataMap.merge(FSpectator.TestDataMap.T,FSpectator.TestDataMap.T)">
+<summary>
+ Merges two TestDataMap instances. In case the same key
+ exists in both data maps, the value from &apos;a&apos; will win.
+</summary>
+</member>
+<member name="M:FSpectator.TestDataMap.get``1(System.String,FSpectator.TestDataMap.T)">
+<summary>
+ Retrieves a piece of data with the specified key. 
+ Throws an exception of the data is not found.
+</summary>
+</member>
+<member name="M:FSpectator.TestDataMap.tryGet``1(System.String,FSpectator.TestDataMap.T)">
+<summary>
+ Attempts to get an element from the data map with a specific
+ key. If the element is found, it is cast to &apos;T and returned,
+ otherwise None is returned.
+</summary>
+</member>
+<member name="P:FSpectator.TestDataMap.Zero">
+<summary>
+ Gets an empty TestDataMap
+</summary>
+</member>
+<member name="M:FSpectator.TestDataMap.create``1(Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,``0}})">
+<summary>
+ Creates a new collection of data from a list of key-value pairs.
+ The values must be of the same data type, otherwise the compiler
+ will complain. To mix different types of values, merge two 
+ TestDataMap instances with the different data
+</summary>
+</member>
+<member name="T:FSpectator.TestDataMap">
+<summary>
+ Represents a collection of test specific data. Used for both
+ context data and example metadata
+</summary>
+</member>
+</members>
+</doc>
