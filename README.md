@@ -24,7 +24,7 @@ Enjoy!
 
 ### Issues
 
-Feature requests, bugs & issues are handled on [NSpectator Youtrack InCloud](https://nspectator.myjetbrains.com)
+Feature requests, bugs & issues are handled on [FSpectator Youtrack InCloud](https://nspectator.myjetbrains.com/youtrack/issues/FS)
 
 Use github authorization (gray bottom button) for signup or login.
 
