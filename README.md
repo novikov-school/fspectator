@@ -1,10 +1,10 @@
-# FSpectator
+# fspectator
 
 [![Join the chat at https://gitter.im/nspectator/NSpectator](https://badges.gitter.im/nspectator/NSpectator.svg)](https://gitter.im/nspectator/NSpectator?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/nspectator/FSpectator/master/license.txt)
 
 
-FSpectator is ready-to-use F# toolkit for writing acceptance tests with Context/Specification flavor. It can be used in different approaches where Specification-By-Example is applicable, including TDD, ATDD, BDD or another agile technics.
+fspectator is ready-to-use F# toolkit for writing acceptance tests with Context/Specification flavor. It can be used in different approaches where Specification-By-Example is applicable, including TDD, ATDD, BDD or another agile technics.
 
 # Installation
 
@@ -24,7 +24,7 @@ Enjoy!
 
 ### Issues
 
-Feature requests, bugs & issues are handled on [FSpectator Youtrack InCloud](https://nspectator.myjetbrains.com/youtrack/issues/FS)
+Feature requests, bugs & issues are handled on [fspectator Youtrack InCloud](https://nspectator.myjetbrains.com/youtrack/issues/FS)
 
 Use github authorization (gray bottom button) for signup or login.
 
